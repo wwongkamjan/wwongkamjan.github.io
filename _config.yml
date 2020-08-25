@@ -1,9 +1,9 @@
-title: John Doe # your name (or website title) here
-logo: "/images/logo.png?raw=true" # your photo (or logo) here
+title: Wichayaporn Wongkamjan # your name (or website title) here
+logo: "/images/port_logo.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  First description 
+  Pursuing Master's in CS at UMD. Expected graduate: May 2021. Aiming for ML and Data Science as dream careers.
   <br><br>
-  Second description 
+  Area of Interests: AI, ML, and Game Development
   <br><br>
   <a href="https://www.linkedin.com/in/wwongkamjan/">View My LinkedIn Profile</a> 
   
