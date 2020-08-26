@@ -8,16 +8,17 @@ While there was some element of luck involved in surviving, it seems some groups
 
 In this challenge, we ask you to build a predictive model that answers the question: “what sorts of people were more likely to survive?” using passenger data (ie name, age, gender, socio-economic class, etc).
 
-### 1. Suggest hypotheses about the causes of observed phenomena
+
+### Suggest hypotheses about the causes of observed phenomena
 
 We migth have heard and seen a movie about the Titanic before. We also, might have heard that most of adult male passengers did not survived on that night. Why? It was a sacrifice of male passengers, so that, female and younger passengers could survive with lifeboats. It was a mistake that all of lifeboats could not handle 2K of people. It was a tragic and lesson for humanity. However, today I am going to show that what we have heard is around 70% true. Let's see! 
 
-### 2. Assess assumptions on which statistical inference will be based
 
-<div class='tableauPlaceholder' id='viz1598456114967' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ti&#47;TitanicDataVisualization_15983899037880&#47;TitanicDashboardKaggleDataset&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TitanicDataVisualization_15983899037880&#47;TitanicDashboardKaggleDataset' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ti&#47;TitanicDataVisualization_15983899037880&#47;TitanicDashboardKaggleDataset&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1598456114967');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='2427px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+### Assess assumptions on which statistical inference will be based
 
+<iframe seamless frameborder="0" src="https://public.tableau.com/views/TitanicDataVisualization_15983899037880/TitanicDashboardKaggleDataset?:embed=yes&:display_count=yes&:showVizHome=no" width = '650' height = '450' scrolling='yes' ></iframe>   
 
-### 3. Support the selection of appropriate statistical tools and techniques
+### Support the selection of appropriate statistical tools and techniques
 
 Train data by SVM
 ```python
@@ -82,8 +83,9 @@ print("actual: ", y_test)
 print("accuracy: ", acc)
 ```
 
-### 4. Provide a prediction of via the inference 
+### Provide a prediction of the test data via the inference 
 
+By SVM
 ```python
 model = svm.SVC()
 model.fit(scaled_X, y)
@@ -98,6 +100,24 @@ scaled_X_test = scaler.fit_transform(X_test)
 predictions = model.predict(scaled_X_test)
 
 print("predictions:", predictions)
+```
+
+By Simple Neural Network
+```python
+model = Sequential([
+    Dense(units=16, input_shape=(17,), activation='sigmoid'),
+    Dense(units=2, activation='sigmoid')
+])
+
+model.compile(optimizer=Adam(learning_rate=0.02), loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+model.fit(x=scaled_X, y= y,validation_split=0.2, batch_size=15, epochs=60, shuffle=True, verbose=0)
+
+predictions = model.predict(x=scaled_X_test
+    , batch_size=15
+    , verbose=0)
+rounded_predictions = np.argmax(predictions, axis=-1)
+
+print("predictions:", rounded_predictions)
 ```
 
 For more details see [Titanic: Data Analysis and Prediction on Kaggle](https://www.kaggle.com/wwongkamjan/titanic-data-analysis-and-prediction/).
