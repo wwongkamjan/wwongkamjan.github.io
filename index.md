@@ -4,8 +4,8 @@
 
 ### Projects
 
-[Titanic: Data Analysis and Prediction](/sample_page)
-<img src="images/Tableau.PNG?raw=true"/>
+[Titanic: Data Analysis and Prediction](/titanic)
+<img src="images/titanic_tb.JPG?raw=true"/>
 
 ---
 
