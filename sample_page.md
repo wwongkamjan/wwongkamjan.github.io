@@ -1,31 +1,103 @@
-## This can be your internal website page / project page
+## Titanic: Data Analysis and Prediction 
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Project description:** The sinking of the Titanic is one of the most infamous shipwrecks in history.
+
+On April 15, 1912, during her maiden voyage, the widely considered “unsinkable” RMS Titanic sank after colliding with an iceberg. Unfortunately, there weren’t enough lifeboats for everyone onboard, resulting in the death of 1502 out of 2224 passengers and crew.
+
+While there was some element of luck involved in surviving, it seems some groups of people were more likely to survive than others.
+
+In this challenge, we ask you to build a predictive model that answers the question: “what sorts of people were more likely to survive?” using passenger data (ie name, age, gender, socio-economic class, etc).
 
 ### 1. Suggest hypotheses about the causes of observed phenomena
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-
-```javascript
-if (isAwesome){
-  return true
-}
-```
+We migth have heard and seen a movie about the Titanic before. We also, might have heard that most of adult male passengers did not survived on that night. Why? It was a sacrifice of male passengers, so that, female and younger passengers could survive with lifeboats. It was a mistake that all of lifeboats could not handle 2K of people. It was a tragic and lesson for humanity. However, today I am going to show that what we have heard is around 70% true. Let's see! 
 
 ### 2. Assess assumptions on which statistical inference will be based
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
+<div class='tableauPlaceholder' id='viz1598456114967' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ti&#47;TitanicDataVisualization_15983899037880&#47;TitanicDashboardKaggleDataset&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TitanicDataVisualization_15983899037880&#47;TitanicDashboardKaggleDataset' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ti&#47;TitanicDataVisualization_15983899037880&#47;TitanicDashboardKaggleDataset&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1598456114967');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='2427px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
 
 ### 3. Support the selection of appropriate statistical tools and techniques
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+Train data by SVM
+```python
+from sklearn import svm
+from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import OneHotEncoder
 
-### 4. Provide a basis for further data collection through surveys or experiments
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+cols = list(train_data.columns)
+X = train_data[['Sex','Age_Band',]].values
+y = train_data[['Survived']].values.ravel()
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+# label Sex and Age_Range to be int!
+Le = LabelEncoder()
+X[:,0] = Le.fit_transform (X[:,0])
+X[:,1] = Le.fit_transform (X[:,1])
+
+X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=0.2)
+
+model = svm.SVC()
+model.fit(X_train, y_train)
+
+predictions = model.predict(X_test)
+acc = accuracy_score(y_test, predictions)
+
+print("predictions:", predictions)
+print("actual: ", y_test)
+print("accuracy: ", acc)
+```
+
+Train data by Simple Neural Network 
+```python
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.models import Sequential #what is sequential? most simplist type good for one tensor input and output
+from tensorflow.keras.layers import Activation, Dense
+from tensorflow.keras.optimizers import Adam, SGD
+from tensorflow.keras.metrics import categorical_crossentropy
+
+X_train = X_train.astype('float') 
+y_train = y_train.astype('float')
+
+model = Sequential([
+    Dense(units=16, input_shape=(17,), activation='sigmoid'),
+    Dense(units=2, activation='sigmoid')
+])
+
+model.compile(optimizer=Adam(learning_rate=0.02), loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+model.fit(x=X_train, y= y_train,validation_split=0.2, batch_size=15, epochs=60, shuffle=True, verbose=0)
+
+predictions = model.predict(x=X_test
+    , batch_size=15
+    , verbose=0)
+
+rounded_predictions = np.argmax(predictions, axis=-1)
+
+acc = accuracy_score(y_test, rounded_predictions)
+
+print("predictions:", rounded_predictions)
+print("actual: ", y_test)
+print("accuracy: ", acc)
+```
+
+### 4. Provide a prediction of via the inference 
+
+```python
+model = svm.SVC()
+model.fit(scaled_X, y)
+
+X_test = test_data[['Fare', 'Has_Cabin', 'no_of_fam', 'Age_Band',
+       'Sex_0', 'Sex_1', 'Pclass_0', 'Pclass_1', 'Pclass_2', 'Embarked_0',
+       'Embarked_1', 'Embarked_2', 'Title_0', 'Title_1', 'Title_2', 'Title_3',
+       'Title_4']].values
+
+scaled_X_test = scaler.fit_transform(X_test)
+
+predictions = model.predict(scaled_X_test)
+
+print("predictions:", predictions)
+```
+
+For more details see [Titanic: Data Analysis and Prediction on Kaggle](https://www.kaggle.com/wwongkamjan/titanic-data-analysis-and-prediction/).
