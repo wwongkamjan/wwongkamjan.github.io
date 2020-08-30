@@ -5,9 +5,13 @@
 ### Projects
 
 [Titanic: Data Analysis and Prediction](/titanic)
+
 <img src="images/titanic_tb.JPG?raw=true"/>
 
 
+[Covid-19: Data Visualization and Forecasting](/covid19_casecounts)
+
+<img src="images/titanic_tb.JPG?raw=true"/>
 ---
 
 ### My profile in other sources
