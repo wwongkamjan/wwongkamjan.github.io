@@ -23,7 +23,7 @@ These numbers can be shown one at the time. With parameters in below pictures, y
 <br>
 <img src="images/covid19_page1_1.JPG?raw=true"/>
 
-Parameters:
+#### Parameters:
 * By Measure (Cases Count, Death Count)
 * Cumulative or Active/New
 * Top (Integers as an input, this page will show only Top N regions of the number)
