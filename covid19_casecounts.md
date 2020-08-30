@@ -10,13 +10,9 @@ Lastly, I have prediction over 10 days in the last of the dashboard. It was show
 
 <iframe seamless frameborder="0" src="https://public.tableau.com/views/Covidtableonly/Covid19countbyregions?:embed=yes&:display_count=yes&:showVizHome=no" width = '800' height = '800' scrolling='yes' ></iframe>  
 
-
-
-
-
-
+<br><br>
 ### A Guide: How to use it?
 
 
-
+<br>
 Link to [Tableau](https://public.tableau.com/profile/wichayaporn.wongkamjan#!/vizhome/Covidtableonly/Covid19countbyregions).
