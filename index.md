@@ -10,6 +10,8 @@
 
 
 
+
+
 [Covid-19: Data Visualization and Forecasting](/covid19_casecounts)
 
 <img src="images/covid19_thumbnial.png?raw=true"/>
