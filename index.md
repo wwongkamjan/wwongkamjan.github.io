@@ -5,6 +5,7 @@
 ### Projects
 
 [Titanic: Data Analysis and Prediction](/titanic) 
+
 <img src="images/titanic_tb.JPG?raw=true"/>
 <br><br>
 **Project description:** The sinking of the Titanic is one of the most infamous shipwrecks in history.
@@ -18,6 +19,7 @@ In this challenge, we ask you to build a predictive model that answers the quest
 ---
 
 [Covid-19: Data Visualization and Forecasting](/covid19_casecounts)
+
 <img src="images/covid19_thumbnial.png?raw=true"/>
 **Project description:** Covid-19 has been a big impact to our human since the start of 2020. Number of infected cases has been high and low overtime, never went to zero or lower than 10 since the start.  
 
