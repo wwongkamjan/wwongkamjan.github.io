@@ -4,7 +4,7 @@
 
 ### Projects
 
-[Titanic: Data Analysis and Prediction](/titanic)
+[Titanic: Data Analysis and Prediction](/titanic) <br>
 **Project description:** The sinking of the Titanic is one of the most infamous shipwrecks in history.
 
 On April 15, 1912, during her maiden voyage, the widely considered “unsinkable” RMS Titanic sank after colliding with an iceberg. Unfortunately, there weren’t enough lifeboats for everyone onboard, resulting in the death of 1502 out of 2224 passengers and crew.
@@ -19,7 +19,7 @@ In this challenge, we ask you to build a predictive model that answers the quest
 
 ---
 
-[Covid-19: Data Visualization and Forecasting](/covid19_casecounts)
+[Covid-19: Data Visualization and Forecasting](/covid19_casecounts) <br>
 **Project description:** Covid-19 has been a big impact to our human since the start of 2020. Number of infected cases has been high and low overtime, never went to zero or lower than 10 since the start.  
 
 With this data visualization, you will see the number of active and cumulative as of date (which you can select from parameter) by country. Also, you will see those number in time series graphs which you can select 2 countries to show as need.
