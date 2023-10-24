@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About Joy Wichayaporn Wongkamjan"
+title: "About Joy"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
