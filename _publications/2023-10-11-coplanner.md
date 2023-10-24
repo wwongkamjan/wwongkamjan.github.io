@@ -17,7 +17,7 @@ framework that can be applied to any dyna-style model-based methods. Experimenta
 demonstrate that both sample efficiency and asymptotic performance of strong
 model-based methods are significantly improved combined with COPlanner.'
 date: 2023-10-11
-venue: ''
+venue: 'arXiv preprint'
 paperurl: 'https://arxiv.org/pdf/2310.07220.pdf'
-citation: 'X Wang, R Zheng, Y Sun, R Jia, W Wongkamjan, H Xu, F Huang arXiv preprint arXiv:2310.07220'
+citation: 'Wang, X., Zheng, R., Sun, Y., Jia, R., Wongkamjan, W., Xu, H. and Huang, F., 2023. COPlanner: Plan to Roll Out Conservatively but to Explore Optimistically for Model-Based RL. arXiv preprint arXiv:2310.07220.'
 ---
