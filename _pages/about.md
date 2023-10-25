@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About Joy :raising_hand_woman:"
+title: "About Joy 💜"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I am Wichayaporn Wongkamjan or Joy in short (using a nickname is very common for Thai people, so I am good with any name :white_heart:). I am currently a 3rd-year [Computer Science Ph.D. student at the University of Maryland](https://www.cs.umd.edu/) and advised by [Prof. Jordan Boyd Graber](https://users.umiacs.umd.edu/~jbg/) and [Prof. Furong Huang](https://furong-huang.com/). My research interest lies at the intersection of Reinforcement Learning, NLP, and Social Science towards game applications. Recently, I have been working on Human-AI interactions in strategic and role-play games (e.g. [***Diplomacy***](https://en.wikipedia.org/wiki/Diplomacy_(game)), [***Dungeon and Dragons***](https://dnd.wizards.com/)), studying persuasion, deception, and ensuring best practices in human assistance.
+I am Wichayaporn Wongkamjan or Joy in short (using a nickname is very common for Thai people, so I am good with any name👍). I am currently a 3rd-year [Computer Science Ph.D. student at the University of Maryland](https://www.cs.umd.edu/) and advised by [Prof. Jordan Boyd Graber](https://users.umiacs.umd.edu/~jbg/) and [Prof. Furong Huang](https://furong-huang.com/). My research interest lies at the intersection of Reinforcement Learning, NLP, and Social Science towards game applications. Recently, I have been working on Human-AI interactions in strategic and role-play games (e.g. [***Diplomacy***](https://en.wikipedia.org/wiki/Diplomacy_(game)), [***Dungeon and Dragons***](https://dnd.wizards.com/)), studying persuasion, deception, and ensuring best practices in human assistance.
 
-Game AI research :video_game:
+Game AI research 🎮
 ======
 As far as I remember, I have been into video games since young and consider it a permanent hobby! I have always been curious about game development and did a senior project in my Bachelor creating a [2D side-scrolling puzzle game](https://github.com/wwongkamjan/MEOWPOWER). Later than that I was introduced to AI/ML and that really motivated me to dive deep into deep learning research. 
 
