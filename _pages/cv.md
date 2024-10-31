@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-Please follow here to see: [CV_wwongkamjan](https://github.com/wwongkamjan/wwongkamjan.github.io/blob/master/files/CV%202023.pdf)
+Please follow here to see: [CV_wwongkamjan](https://github.com/wwongkamjan/wwongkamjan.github.io/blob/master/files/CV%202024.pdf)
