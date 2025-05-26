@@ -6,7 +6,7 @@ subtitle: <a href='#'>University of Maryland</a> wwongkam@umd.edu
 
 profile:
   align: right
-  image: profile_wwongkamjan (1).jpg
+  image: profile_wwongkamjan.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>University of Maryland</p>
