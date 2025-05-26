@@ -2,16 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='#'>University of Maryland</a> wwongkam@umd.edu 
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: profile_wwongkamjan (1).jpg
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>University of Maryland</p>
+    <p>wwongkam@umd.edu</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +26,15 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am Wichayaporn Wongkamjan or Joy in short (using a nickname is very common for Thai people, so I am good with any name👍). I am currently a 3rd-year [Computer Science Ph.D. student at the University of Maryland](https://www.cs.umd.edu/) and advised by [Prof. Jordan Boyd Graber](https://users.umiacs.umd.edu/~jbg/) and [Prof. Furong Huang](https://furong-huang.com/). My research interest lies at the intersection of Reinforcement Learning, NLP, and Social Science towards game applications. Recently, I have been working on Human-AI interactions in strategic and role-play games (e.g. [***Diplomacy***](https://en.wikipedia.org/wiki/Diplomacy_(game)), [***Dungeon and Dragons***](https://dnd.wizards.com/)), studying persuasion, deception, and ensuring best practices in human assistance.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Game AI research 🎮
+======
+As far as I remember, I have been into video games since young and consider it a permanent hobby! I have always been curious about game development and did a senior project in my Bachelor creating a [2D side-scrolling puzzle game](https://github.com/wwongkamjan/MEOWPOWER). Later than that I was introduced to AI/ML and that really motivated me to dive deep into deep learning research. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Thanks to Prof. Jordan Boyd Graber and Prof. Furong Huang, I have a chance to join [ALLAN-UMD](https://github.com/ALLAN-DIP) (under [DARPA-SHADE](https://www.shade-aie.org/)) in my 1st-2nd year of PhD student. Mostly I have been experimenting on AI communicating with humans and AI themselves. To my surprise, formulating such complex games like Diplomacy into mathematic forms is really challenging and there are estimated solutions with modern deep learning training (e.g. *trained by human data*, *regret minimization in RL*) and finetuning (e.g. *finetune LLM with human preferences*). Not only that, while working through that, I am also amazed by [***Meta’s Cicero***](https://ai.meta.com/research/cicero/)! Behind those human-like conversations and strategies, there are more than 10 models in corporate in them and require tons of hours to train and finetune. This really motivates me and drives me to solve other problems in Diplomacy and other complex games. 
+
+Overall, these are challenges in Game human-AI research that I have been looking onward:
+1. AI generalist as human assistance in Games
+2. Human-AI corporations activating super-human performance 
+3. Communication strategies in Human VS in AI
