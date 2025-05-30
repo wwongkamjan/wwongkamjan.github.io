@@ -19,11 +19,6 @@ announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
 I am Wichayaporn Wongkamjan or Joy in short (using a nickname is very common for Thai people, so I am good with any name👍). I am currently a 3rd-year [Computer Science Ph.D. student at the University of Maryland](https://www.cs.umd.edu/) and advised by [Prof. Jordan Boyd Graber](https://users.umiacs.umd.edu/~jbg/) and [Prof. Furong Huang](https://furong-huang.com/). My research interest lies at the intersection of Reinforcement Learning, NLP, and Social Science towards game applications. Recently, I have been working on Human-AI interactions in strategic and role-play games (e.g. [***Diplomacy***](https://en.wikipedia.org/wiki/Diplomacy_(game)), [***Dungeon and Dragons***](https://dnd.wizards.com/)), studying persuasion, deception, and ensuring best practices in human assistance.
