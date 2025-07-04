@@ -23,10 +23,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-our-paper-ctrl-d-is-accepted-acl-findings-2025",
+        },{id: "news-our-paper-ctrl-d-is-accepted-acl-findings-2025",
           title: 'Our paper CTRL-D is accepted ACL Findings 2025!',
           description: "",
           section: "News",},{
