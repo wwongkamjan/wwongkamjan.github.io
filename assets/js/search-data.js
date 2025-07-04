@@ -23,7 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{
+        },{id: "news-a-simple-inline-announcement",
+          title: 'A simple inline announcement.',
+          description: "",
+          section: "News",},{id: "news-a-simple-inline-announcement",
+          title: 'A simple inline announcement.',
+          description: "",
+          section: "News",},{
         id: 'social-discord',
         title: 'Discord',
         section: 'Socials',
