@@ -26,8 +26,8 @@ ninja.data = [{
         },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
-          section: "News",},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+          section: "News",},{id: "news-our-paper-ctrl-d-is-accepted-acl-findings-2025",
+          title: 'Our paper CTRL-D is accepted ACL Findings 2025!',
           description: "",
           section: "News",},{
         id: 'social-discord',
