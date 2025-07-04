@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-05-29 23:35:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Our paper [CTRL-D](https://wwongkamjan.github.io/projects/ctrld/) is accepted ACL Findings 2025! 
